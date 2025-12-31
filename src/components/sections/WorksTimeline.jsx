@@ -25,7 +25,7 @@ const WorksTimeline = () => {
     <section id="mes-traveaux" className="py-20 bg-black overflow-hidden select-none">
       <div className="px-6 mb-12 md:mb-20">
         <h2 className="text-center text-3xl md:text-4xl font-bold text-white uppercase tracking-widest">
-          Mon Parcours
+          Mes travaux
         </h2>
         <p className="text-center text-blue-500 font-mono text-sm mt-2">Découvrez l'évolution de mes projets</p>
       </div>
