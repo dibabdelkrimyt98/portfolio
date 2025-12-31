@@ -1,0 +1,20 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /feedbacks/{document=**} {
+      // Allow anyone to read existing comments
+      allow read: if true;
+      
+      // Allow anyone to post a NEW comment
+      allow create: if true;
+      
+      // CRITICAL: Only allow updates if the user is ONLY changing the 'likes' field
+      // This prevents people from editing your text or name via the console
+      allow update: if request.resource.data.diff(resource.data).affectedKeys().hasOnly(['likes']);
+      
+      // Deny deleting comments
+      allow delete: if false;
+    }
+  }
+}
