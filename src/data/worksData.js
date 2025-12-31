@@ -3,7 +3,7 @@ export const worksData = [
     id: 1,
     title: "Eco-Tracker App",
     date: "Mars 2024",
-    videoSrc: "/videos/project1.mp4",
+    videoSrc: "/videos/clinique.mp4",
   },
   {
     id: 2,
