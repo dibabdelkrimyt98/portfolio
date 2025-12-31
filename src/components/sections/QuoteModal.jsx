@@ -114,9 +114,9 @@ const QuoteModal = ({ isOpen, onClose }) => {
                       <label className="text-xs font-bold text-gray-400 uppercase ml-2">Budget</label>
                       <div className="relative">
                         <select name="budget" className="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 text-white outline-none focus:border-blue-500 appearance-none cursor-pointer">
-                          <option value="1500-3000" className="bg-zinc-900">1 500€ - 3 000€</option>
-                          <option value="3000-7000" className="bg-zinc-900">3 000€ - 7 000€</option>
-                          <option value="7000+" className="bg-zinc-900">7 000€ +</option>
+                          <option value="1500-3000" className="bg-zinc-900"> - 10000 DA </option>
+                          <option value="3000-7000" className="bg-zinc-900"> 10000 DA - 70000 DA</option>
+                          <option value="7000+" className="bg-zinc-900"> + 70000 DA </option>
                         </select>
                         <div className="absolute right-5 top-1/2 -translate-y-1/2 pointer-events-none text-gray-500">↓</div>
                       </div>
