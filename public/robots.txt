@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dib-portfolio.web.app/sitemap.xml

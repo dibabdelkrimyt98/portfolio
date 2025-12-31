@@ -1,13 +1,14 @@
 // Import the functions you need from the SDKs you need
 import { getAnalytics } from "firebase/analytics";
 import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyA60rDRsWwbf1_GDUgiE2cDtPh2-FZaGoo",
+  apiKey: import.meta.env.VITE_API_KEY,
   authDomain: "dib-portfolio-dev.firebaseapp.com",
   projectId: "dib-portfolio-dev",
   storageBucket: "dib-portfolio-dev.firebasestorage.app",
