@@ -14,7 +14,7 @@ const Navbar = ({ onOpenDevis, onOpenFeedback }) => {
       <div className="max-w-7xl mx-auto bg-black/60 backdrop-blur-xl border border-white/10 rounded-2xl px-4 md:px-8 py-3 flex items-center justify-between">
         
         <div className="text-white font-bold text-xl tracking-tighter">
-          PORTFOLIO<span className="text-blue-500">.</span>
+          DIB<span className="text-blue-500"> - </span>PORTFOLIO<span className="text-blue-500"> . </span>
         </div>
 
         <div className="hidden md:flex items-center space-x-8">

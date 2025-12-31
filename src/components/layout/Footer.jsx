@@ -9,19 +9,19 @@ const Footer = () => {
   const socialLinks = [
     { 
       name: 'LinkedIn', 
-      href: 'https://linkedin.com/in/yourprofile', 
+      href: 'https://www.linkedin.com/in/dibabdelkrimyt98/', 
       icon: <Linkedin size={20} />, 
       color: 'hover:text-[#0077B5]' 
     },
     { 
       name: 'GitHub', 
-      href: 'https://github.com/yourusername', 
+      href: 'https://www.instagram.com/dibabdelkrimyt/?hl=en', 
       icon: <Github size={20} />, 
       color: 'hover:text-[#fafafa]' 
     },
     { 
       name: 'Instagram', 
-      href: 'https://instagram.com/yourprofile', 
+      href: 'https://instagram.com/dibabdelkrimyt', 
       icon: <Instagram size={20} />, 
       color: 'hover:text-[#E4405F]' 
     },
@@ -51,7 +51,7 @@ const Footer = () => {
               className="text-white font-black text-3xl tracking-tighter mb-6 flex items-center gap-2"
             >
               <div className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center text-sm shadow-lg shadow-blue-600/20">D</div>
-              PORTFOLIO<span className="text-blue-600">.</span>
+              DIB<span className="text-blue-500"> - </span>PORTFOLIO<span className="text-blue-500"> . </span>
             </motion.div>
             <p className="text-gray-400 text-base leading-relaxed mb-8">
               Développeur Full-Stack passionné par la création d'interfaces fluides 
