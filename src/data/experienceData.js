@@ -33,5 +33,13 @@ export const experiences = [
         company: "Freelance", 
         desc: "developpement des application web et mobile et donner des consulation et des formation dans le dev et le IT en geenrale",
         skills: ["React", "React Native", "Python", "Java", "Firebae", "PostgreSQL"]
+      },
+      {
+        id: 5,
+        year: "Janvier 2026 - Present",
+        role: "Associate Product Specialist",
+        company: "Half Ware", 
+        desc: "Dans le cadre de cette experience professionnelle, j'ai travaillé sur la documentation des produit IT, l'accompagnement des clients dans l'utilisation des produits, le communication avec les equipes de developpement et les equipes de support, le support des clients et la resolution des problemes.",
+        skills: ["ERPNext", "Frappe", "Python", "Java", "JavaScript", "MariaDB"]
       }
   ];
