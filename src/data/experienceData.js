@@ -40,6 +40,6 @@ export const experiences = [
         role: "Associate Product Specialist",
         company: "Half Ware", 
         desc: "Dans le cadre de cette experience professionnelle, j'ai travaillé sur la documentation des produit IT, l'accompagnement des clients dans l'utilisation des produits, le communication avec les equipes de developpement et les equipes de support, le support des clients et la resolution des problemes.",
-        skills: ["ERPNext", "Frappe", "Python", "Java", "JavaScript", "MariaDB"]
+        skills: ["ERPNext", "Frappe", "Python", "Java", "JavaScript", "MariaDB", "QA", "ITIL", "Documentation"]
       }
   ];
