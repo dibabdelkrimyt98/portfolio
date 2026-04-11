@@ -101,12 +101,18 @@ function App() {
         {/* Chronologie des Projets (Placé après Product) */}
         <ProjectsTimeline />
         
+        
+        
+        <Experience />
+        
+
+
         <Collaborators 
           comments={comments} 
           onLike={handleLike} 
         />
-        
-        <Experience />
+
+
         <ContactForm />
       </main>
 

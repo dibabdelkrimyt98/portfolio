@@ -1,19 +1,25 @@
 import { motion } from 'framer-motion';
-import { useEffect, useRef, useState } from 'react';
-// Import the data from your data folder
+import { useEffect, useMemo, useRef, useState } from 'react';
+// Import des données
 import { projectsData } from '../../data/projectsData';
 
 const ProjectsTimeline = () => {
   const containerRef = useRef(null);
   const [dragLimit, setDragLimit] = useState(0);
 
+  // Utilisation de useMemo pour trier les données une seule fois (ID le plus haut en premier)
+  const sortedProjects = useMemo(() => {
+    return [...projectsData].sort((a, b) => b.id - a.id);
+  }, []);
+
   useEffect(() => {
     if (containerRef.current) {
       const contentWidth = containerRef.current.scrollWidth;
       const visibleWidth = window.innerWidth;
+      // Mise à jour de la limite de drag basée sur le contenu trié
       setDragLimit(-(contentWidth - visibleWidth * 0.8));
     }
-  }, []);
+  }, [sortedProjects]); // Se déclenche si les projets changent
 
   return (
     <section id="projets" className="py-20 bg-black overflow-hidden select-none">
@@ -27,6 +33,7 @@ const ProjectsTimeline = () => {
       </div>
 
       <div className="relative">
+        {/* Ligne de timeline décorative */}
         <div className="absolute top-[45px] left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-blue-900 to-transparent z-0 hidden md:block" />
 
         <motion.div 
@@ -35,8 +42,7 @@ const ProjectsTimeline = () => {
           dragConstraints={{ right: 0, left: dragLimit }}
           className="flex items-start px-6 md:px-[10vw] gap-8 md:gap-12 cursor-grab active:cursor-grabbing overflow-x-auto md:overflow-visible no-scrollbar pb-12"
         >
-          {/* Using projectsData imported from your data folder */}
-          {[...projectsData].sort((a, b) => b.id - a.id).map((project, index) => (
+          {sortedProjects.map((project, index) => (
             <motion.article 
               key={project.id}
               initial={{ opacity: 0, y: 30 }}
@@ -45,6 +51,7 @@ const ProjectsTimeline = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="min-w-[85vw] md:min-w-[420px] max-w-[420px] relative z-10 bg-white/[0.03] border border-white/10 p-8 rounded-3xl backdrop-blur-md hover:bg-white/[0.06] transition-all duration-300 hover:-translate-y-2 group"
             >
+              {/* Point de connexion */}
               <div className="hidden md:block absolute -top-[45px] left-8 w-3 h-3 bg-black border border-blue-500 rounded-full shadow-[0_0_10px_rgba(59,130,246,0.8)] group-hover:scale-150 transition-transform duration-300" />
               <div className="hidden md:block absolute -top-[45px] left-[37px] w-[1px] h-[45px] bg-gradient-to-b from-blue-500/50 to-transparent" />
 

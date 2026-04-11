@@ -15,16 +15,16 @@ export const projectsData = [
   },
   {
     id: 2,
-    title: "EURL Pomaria",
-    date: "Octobre 2025",
-    description: "Site vitrine professionnel pour une entreprise de transformation de papier basée à Sidi Bel Abbes, incluant une architecture scalable.",
-    techs: ["Web Development", "Frontend", "Frappe"]
+    title: "Online Form",
+    date: "Mai 2024",
+    description: "Formulaire en ligne développé pour le module de Développement Web en L2 universitaire.",
+    techs: ["Web Development", "Frontend", "JavaScript"]
   },
   {
     id: 1,
-    title: "Core System Migration",
-    date: "Août 2025",
-    description: "Migration et développement d'outils internes pour améliorer les performances de gestion et de traitement des données de l'entreprise.",
-    techs: ["Rust", "Tauri", "PostgreSQL"]
+    title: "Home page of travel agency web site",
+    date: "Juillet 2025",
+    description: "Réalisation d'un site vitrine pour une agence de voyage en utilisant HTML et CSS, structuré en trois sections distinctes.",
+    techs: ["HTML", "CSS", "JavaScript"]
   }
 ];
