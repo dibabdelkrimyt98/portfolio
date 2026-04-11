@@ -9,7 +9,7 @@ import {
   serverTimestamp,
   updateDoc
 } from "firebase/firestore";
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { db } from './firebase';
 
 // Layout & UI Components
@@ -24,6 +24,8 @@ import Collaborators from './components/sections/Collaborators';
 import ContactForm from './components/sections/ContactForm';
 import Experience from './components/sections/Experience';
 import Hero from './components/sections/Hero';
+import MyProduct from './components/sections/MyProduct';
+import ProjectsTimeline from './components/sections/ProjectsTimeline';
 import WorksTimeline from './components/sections/WorksTimeline';
 
 function App() {
@@ -77,7 +79,7 @@ function App() {
 
   return (
     <div className="bg-[#050505] min-h-screen selection:bg-blue-500/30">
-      {/* Background Decorations (Optional) */}
+      {/* Background Decorations */}
       <div className="fixed inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(17,24,39,1),rgba(5,5,5,1))] z-[-1]" />
       
       <WelcomeModal />
@@ -89,7 +91,15 @@ function App() {
 
       <main className="pt-20">
         <Hero />
+        
+        {/* Section Chronologie des Travaux */}
         <WorksTimeline />
+        
+        {/* Ton Produit Phare (Placé après WorksTimeline) */}
+        <MyProduct />
+
+        {/* Chronologie des Projets (Placé après Product) */}
+        <ProjectsTimeline />
         
         <Collaborators 
           comments={comments} 
