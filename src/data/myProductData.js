@@ -5,7 +5,12 @@ export const myProductData = [
     tagline: "Desktop & Design System",
     description: "Une solution logicielle conçue avec une approche minimaliste. Inspirée par les interfaces fintech modernes, cette application intègre des ombres douces et des coins arrondis.",
     fullDetails: "Lumina est une application desktop haute performance développée en Rust. Elle met l'accent sur une gestion fluide des données locales et une interface utilisateur extrêmement réactive. Le projet démontre une maîtrise complète du cycle de développement, de l'architecture backend à l'expérience utilisateur finale.",
-    image: "images/LS-Interface-03.png",
+    // Assure-toi que ces images sont dans : public/images/lumina/
+    images: [
+      "../src/data/images/LS-Interface-03.png",
+      "../src/data/images/LS-Interface-01.png",
+      "../src/data/images/LS-Interface-02.png"
+    ], 
     technicalList: [
       "Rust (Tauri)",
       "React JS",
@@ -13,6 +18,6 @@ export const myProductData = [
       "Framer Motion",
       "SQLite"
     ],
-    link: "https://github.com/votre-username/lumina-app" // Lien vers le repo ou démo
+    link: "https://github.com/dibabdelkrimyt98/Lumina-Disk-Analyzer"
   }
 ];
