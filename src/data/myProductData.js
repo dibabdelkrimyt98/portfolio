@@ -7,7 +7,7 @@ export const myProductData = [
     fullDetails: "Lumina est une application desktop haute performance développée en Rust. Elle met l'accent sur une gestion fluide des données locales et une interface utilisateur extrêmement réactive. Le projet démontre une maîtrise complète du cycle de développement, de l'architecture backend à l'expérience utilisateur finale.",
     // Assure-toi que ces images sont dans : public/images/lumina/
     images: [
-      "/src/data/images/LS-Interface-03.png",
+      "/data/images/LS-Interface-03.png",
       "/src/data/images/LS-Interface-01.png",
       "/src/data/images/LS-Interface-02.png"
     ], 
